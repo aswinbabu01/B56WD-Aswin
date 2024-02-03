@@ -1,0 +1,93 @@
+1. Write a blog on Difference between HTTP1.1 vs HTTP2:
+
+HTTP:
+
+HTTP stands for hypertext transfer protocol & it is used in client-server communication. By using HTTP user sends the request to the server & the server sends the response to the user. There are several stages of development of HTTP but we will focus mainly on HTTP/1.1 which was created in 1997 & the new one is HTTP/2 which was created in 2015.
+
+HTTP 1.1 :
+
+    * The first usable version of HTTP was created in 1997. Because it went through several stages of development, this first version of HTTP was called HTTP / 1.1.This version is still in use on the web.
+    * It works on the textual format.
+    * There is head of line blocking that blocks all the requests behind it until it doesn’t get its all resources
+    * It uses requests resource Inlining for use getting multiple pages
+    * It compresses data by itself.
+
+HTTP 2 :
+
+    * In 2015, a new version of HTTP called HTTP/2 was created. HTTP/2 solves several problems that the creators of HTTP/1.1 did not anticipate. In particular, HTTP/2 is much faster and more efficient than HTTP/1.1. One of the ways in which HTTP/2 is faster is in how it prioritizes content during the loading process.
+    * It works on the binary protocol.
+    * It allows multiplexing so one TCP connection is required for multiple requests.
+    * It uses PUSH frame by server that collects all multiple pages 
+    * It uses HPACK for data compression.
+
+Differences between HTTP 1 and HTTP 2 : 
+ 
+Multiplexing: 
+
+    * HTTP/1.1 loads resources one after the other, so if one resource cannot be loaded, it blocks all the other resources behind it.
+    * In contrast, HTTP/2 is able to use a single TCP connection to send multiple streams of data at once so that no one resource blocks any other resource. 
+    * HTTP/2 does this by splitting data into binary-code messages and numbering these messages so that the client knows which stream each binary message belongs to.
+
+Server push: 
+
+   * Typically, a server only serves content to a client device if the client asks for it. However, this approach is not always practical for modern webpages, which often involve several dozen separate resources that the client must request. 
+   * HTTP/2 solves this problem by allowing a server to "push" content to a client before the client asks for it. The server also sends a message letting the client know what pushed content to expect – like if Bob had sent Alice a Table of Contents of his novel before sending the whole thing.
+
+   Header compression: 
+   
+    * Small files load more quickly than large ones. To speed up web performance, both HTTP/1.1 and HTTP/2 compress HTTP messages to make them smaller.
+    * However, HTTP/2 uses a more advanced compression method called HPACK that eliminates redundant information in HTTP header packets. 
+    * This eliminates a few bytes from every HTTP packet. Given the volume of HTTP packets involved in loading even a single webpage, those bytes add up quickly, resulting in faster loading.
+
+Write a blog about objects and its internal representation in Javascript: 
+
+Objects: 
+
+    Objects are important data types in javascript. Objects are different than primitive datatypes (i.e. number, string, boolean, etc.). Primitive data types contain one value but Objects can hold many values in form of Key: value pair. These keys can be variables or functions and are called properties and methods, respectively, in the context of an object. 
+
+    Example of a simple JavaScript object:
+
+    const person = {
+     name: "John Doe",
+    age: 30,
+     job: "Software Developer"
+    }
+
+Internal Representation:
+
+1. Property Storage:
+
+    Internally, objects in JavaScript use a data structure known as a hashmap or dictionary to store properties. Each property is associated with a unique key, which is used to access and retrieve the corresponding value.
+
+2. Hidden Classes and Shapes:
+
+    JavaScript engines, such as V8 in Chrome or SpiderMonkey in Firefox, use optimizations like hidden classes and shapes to improve the performance of object creation and property access. Hidden classes are internal representations of the structure of an object, optimizing property access by assigning offsets to properties based on their order of creation.
+
+    Example of hidden class optimization:
+
+    class Person {
+    constructor(name, age, job) {
+        this.name = name;
+        this.age = age;
+        this.job = job;
+    }
+    }
+
+    const john = new Person("John Doe", 30, "Software Developer");
+    const jane = new Person("Jane Doe", 25, "Designer");
+
+3. Prototype Chain:
+
+    JavaScript objects have a prototype chain that allows them to inherit properties and methods from other objects. This chain is established through the prototype property, and it enables a form of object-oriented programming in JavaScript.
+Memory Management:
+
+    JavaScript uses automatic memory management through garbage collection. When an object is no longer reachable, the garbage collector frees up the associated memory, preventing memory leaks.
+
+
+
+
+
+
+
+
+
