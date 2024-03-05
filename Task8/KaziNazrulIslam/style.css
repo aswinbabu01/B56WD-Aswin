@@ -1,0 +1,165 @@
+.orange {
+    background-color: orange;
+    border-color: orange;
+}
+
+.navybar {
+    display: flex;
+    margin-left: 300px;
+    padding-top: 20px;
+    font-size: 18px;
+    gap: 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    gap: 40px;
+}
+
+.heading {
+    height: 400px;
+    margin-top: 220px;
+}
+
+.header {
+    background-color: rgb(41, 41, 41);
+}
+
+.kazir {
+    margin-top: 150px;
+    height: 520px;
+}
+
+.Rebelpara {
+    margin-top: 100px;
+    margin-left: 200px;
+    padding-left: 400px;
+    font-size: 20px;
+}
+
+.Awesomepara {
+    margin-top: 100px;
+    margin-left: 200px;
+    padding-left: 400px;
+    font-size: 20px;
+}
+
+.buttons {
+    margin: 40px;
+    display: flex;
+    gap: 10px;
+}
+
+.wiki,
+.youtube,
+.amazon {
+    margin-right: 10px;
+}
+
+.quote {
+    background-color: rgb(41, 41, 41);
+}
+
+.award,
+.pooo,
+.poosoo {
+    text-align: center;
+    position: relative;
+}
+
+.award::after {
+    content: "";
+    width: 50vw;
+    height: 2px;
+    background-color: rgb(224, 224, 224);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: -2;
+}
+
+.award::before {
+    content: "";
+    width: 50vw;
+    height: 2px;
+    background-color: rgb(224, 224, 224);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: -3;
+}
+
+
+.pooo::before,
+.poosoo::before {
+    content: "";
+    width: 20vw;
+    height: 2px;
+    background-color: rgb(224, 224, 224);
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: -3;
+}
+
+
+.pooo::after,
+.poosoo::after {
+    content: "";
+    width: 20vw;
+    height: 2px;
+    background-color: rgb(224, 224, 224);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: -2;
+}
+
+.spaano {
+    background: white;
+    padding: 0 20px;
+}
+
+.poetpoem {
+    display: flex;
+    justify-content: center;
+}
+
+.poetrylist,
+.poemlist {
+    margin: 30px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(41, 41, 41);
+    width: 100%;
+    color: white;
+    display: flex;
+    padding: 50px;
+}
+
+.about {
+    border-right: 1px solid gray;
+    font-size: 13px;
+    padding: 20px;
+}
+
+.Techs {
+    border-right: 1px solid gray;
+    font-size: 13px;
+    padding: 20px;
+}
+
+.content {
+    font-size: 13px;
+    padding: 20px
+}
+
+.Techs>p,
+.AbuTaher {
+    color: gray;
+}

@@ -1,0 +1,48 @@
+body {
+    background-color: #e3e8e0;
+}
+
+.Layout {
+    margin-top: 60px;
+}
+
+#searchbox {
+    height: 200px;
+    width: 200px;
+    background-color: #474747;
+
+}
+
+#firstbox {
+    height: 700px;
+    border-radius: 30px;
+    background-color: #474747;
+}
+
+#bottombox1 {
+    height: 200px;
+    border-radius: 30px;
+    margin-top: 50px;
+    background-color: #474747;
+}
+
+#bottombox2 {
+    height: 200px;
+    border-radius: 30px;
+    margin-top: 50px;
+    background-color: #474747;
+}
+
+#bottombox3 {
+    height: 200px;
+    border-radius: 30px;
+    margin-top: 50px;
+    background-color: #474747;
+}
+
+#bottombox4 {
+    height: 200px;
+    border-radius: 30px;
+    margin-top: 50px;
+    background-color: #474747;
+}
